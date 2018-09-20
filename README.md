@@ -1,4 +1,3 @@
-# repo2
 
 This is ASP.net MVC application for contact management Add, update, edit and delete contact.
 Steps to Run Application:
