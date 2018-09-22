@@ -8,7 +8,11 @@ namespace ContactManagementWebapi.Controllers
 {
     public class ContactController : ApiController
     {
+        #region Private Members
         private readonly IContact _repository;
+        #endregion
+
+        #region Constructor
 
         public ContactController(IContact contactRepository) => _repository = contactRepository;
 
@@ -16,7 +20,9 @@ namespace ContactManagementWebapi.Controllers
         {
             _repository = new ContactRepository();
         }
+        #endregion
 
+        #region Public Methods
         // GET api/values
         [HttpGet]
         [Route("api/contact/GetAllContacts")]
@@ -105,4 +111,5 @@ namespace ContactManagementWebapi.Controllers
             return Request.CreateResponse(HttpStatusCode.OK, product);
         }
     }
+    #endregion
 }
