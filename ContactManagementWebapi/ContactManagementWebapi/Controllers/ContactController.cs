@@ -51,7 +51,7 @@ namespace ContactManagementWebapi.Controllers
         }
 
         // POST api/values
-        
+
         public HttpResponseMessage Post(Contact contact)
         {
             if (ModelState.IsValid)
@@ -59,10 +59,10 @@ namespace ContactManagementWebapi.Controllers
                 // this will set the ID for instance...
                 contact = _repository.AddContact(contact);
 
-                var response =this.Request.CreateResponse<Contact>(HttpStatusCode.Created, contact);
+                var response = this.Request.CreateResponse<Contact>(HttpStatusCode.Created, contact);
 
-               // string uri = Url.Link("DefaultApi", new { id = contact.Id });
-               // response.Headers.Location = new System.Uri(uri);
+                // string uri = Url.Link("DefaultApi", new { id = contact.Id });
+                // response.Headers.Location = new System.Uri(uri);
                 return response;
             }
             else

@@ -56,7 +56,7 @@ namespace ContactManagementWebapp.Controllers
                 return View(contacts);
             }
 
-            
+
 
             return View(contacts);
         }
@@ -247,7 +247,7 @@ namespace ContactManagementWebapp.Controllers
         #endregion
 
         #region Private Methods
-    
+
 
         private static void SetStatus(ContactViewModel contact)
         {
@@ -261,7 +261,7 @@ namespace ContactManagementWebapp.Controllers
             }
         }
 
-       
+
 
         private static void BindModel(ContactViewModel contact)
         {
@@ -284,7 +284,7 @@ namespace ContactManagementWebapp.Controllers
         }
 
 
-       
+
         #endregion
     }
 }

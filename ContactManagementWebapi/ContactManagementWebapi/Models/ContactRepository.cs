@@ -17,7 +17,7 @@ namespace ContactManagementWebapi.Models
         {
             Contacts.Add(new Contact() { Id = 1, FirstName = "Amit", LastName = "Rastogi", Email = "a@a.com", Status = "Active", PhoneNumber = "5665678909" });
             Contacts.Add(new Contact() { Id = 2, FirstName = "Bhavan", LastName = "Shah", Email = "b@b.com", Status = "InActive", PhoneNumber = "5665678980" });
-            Contacts.Add(new Contact() { Id = 3, FirstName = "Charan", LastName = "Singh", Email = "c@c.com", Status = "Active",PhoneNumber="5665678988" });
+            Contacts.Add(new Contact() { Id = 3, FirstName = "Charan", LastName = "Singh", Email = "c@c.com", Status = "Active", PhoneNumber = "5665678988" });
         }
         #endregion
 
@@ -58,7 +58,7 @@ namespace ContactManagementWebapi.Models
                 contactToUpdate.PhoneNumber = contact.PhoneNumber;
                 return true;
             }
-           
+
             return false;
         }
     }
